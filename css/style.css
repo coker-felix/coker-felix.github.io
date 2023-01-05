@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"); */
 
 :root {
   --main-color: #e38528;
@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: 'MarkPro-Book', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,11 +36,12 @@ body {
 
 section {
   padding: 1rem 5%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  margin-bottom: 20px;
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 1rem;
   color: #111;
   text-transform: uppercase;
@@ -131,8 +132,7 @@ header .follow a:hover {
 }
 
 .techstack-container{
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 16px;
 }
 
 .others {
@@ -195,8 +195,12 @@ header .follow a:hover {
 }
 
 .home .content {
-  flex: 1 1 40rem;
-  margin-top: 20px;
+    flex: 1 1 40rem;
+    border: 1px solid #e38528;
+    border-radius: 5px;
+    padding: 30px;
+    background: #fddac9;
+    margin-top: 60px;
 }
 
 .home .content .hi {
@@ -369,7 +373,7 @@ header .follow a:hover {
   flex: 1 1 30rem;
   text-align: center;
   padding: 2rem;
-  background: #fff;
+  background: #222222;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -391,7 +395,7 @@ header .follow a:hover {
 }
 
 .service .box-container .box p {
-  color: #666;
+  color: #ffffff;
   font-size: 1.7rem;
   padding-top: 0.5rem;
 }
@@ -668,4 +672,8 @@ header .follow a:hover {
   .experience .box-container .box {
     padding-right: 0;
   }
+}
+
+a {
+    color: #e38528;
 }
