@@ -1,0 +1,97 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+import Link from "@/components/shared/Link.astro";
+import projects from "@/data/projects";
+---
+
+<Layout title="Felix Coker | Projects">
+  <main class="flex flex-col gap-20">
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-col gap-4">
+        <div class="flex items-center gap-4">
+          <Link href="/" label="← Back to home" isUnderline target="_self" />
+        </div>
+        <h1 class="text-4xl font-bold bg-gradient-to-r from-emerald-400 to-purple-400 bg-clip-text text-transparent">
+          All Projects
+        </h1>
+        <p class="text-neutral-400 text-lg leading-relaxed max-w-2xl">
+          A comprehensive showcase of my personal projects and professional work. 
+          From side projects to client work, here's everything I've been building.
+        </p>
+      </header>
+    </article>
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-col gap-2">
+        <h2 class="text-2xl font-semibold text-emerald-400">
+          Personal Projects ({projects.personal.length})
+        </h2>
+        <p class="text-neutral-400">
+          Side projects and personal experiments I've built to learn new technologies and solve interesting problems.
+        </p>
+      </header>
+      {projects.personal.length === 0 && (
+        <p class="text-neutral-400">No personal projects yet. Working on something exciting! 🚀</p>
+      )}
+
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {
+          projects.personal.length !== 0 &&
+            projects.personal.map((project) => <ProjectCard project={project} type="personal" />)
+        }
+      </section>
+    </article>
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-col gap-2">
+        <h2 class="text-2xl font-semibold text-emerald-400">
+          Professional Work ({projects.gigs.length})
+        </h2>
+        <p class="text-neutral-400">
+          Client projects and professional work I've completed for various companies and organizations.
+        </p>
+      </header>
+      {projects.gigs.length === 0 && (
+        <p class="text-neutral-400">No professional work to showcase yet.</p>
+      )}
+
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {
+          projects.gigs.length !== 0 &&
+            projects.gigs.map((project) => <ProjectCard project={project} type="gig" />)
+        }
+      </section>
+    </article>
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-col gap-2">
+        <h2 class="text-2xl font-semibold text-emerald-400">Get in touch</h2>
+        <p class="text-neutral-400">
+          Interested in working together? Let's discuss your next project.
+        </p>
+      </header>
+      <div class="flex flex-col gap-4">
+        <p class="text-neutral-300">
+          I'm always open to new opportunities and interesting projects. 
+          Whether you need a full-stack developer for your next big idea or 
+          help with an existing project, I'd love to hear from you.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Link
+            href="mailto:felixkwekuco@gmail.com"
+            label="Email me"
+            isUnderline
+            target="_blank"
+          />
+          <Link
+            href="https://www.linkedin.com/in/felix-coker-9a7960123/"
+            label="Connect on LinkedIn"
+            isUnderline
+            target="_blank"
+          />
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout> 
