@@ -1,12 +1,12 @@
 ---
-interface Props {
+type Props = {
   title: string;
   description: string;
   technologies: Array<{
     name: string;
     category: string;
   }>;
-}
+};
 
 const { title, description, technologies } = Astro.props;
 
