@@ -1,6 +1,6 @@
 ---
 title: "SimKV: A Simple Log-Structured Hash Table Key-Value Store"
-publishedAt: 2024-01-15
+publishedAt: 2025-06-29
 description: "An introduction to building a simple, immutable key-value store using Log-Structured Hash Table architecture. Learn the core concepts behind modern database systems like LevelDB and RocksDB."
 isPublish: true
 isDraft: false
