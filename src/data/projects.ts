@@ -30,15 +30,29 @@ const projects: Projects = {
       description: "A clean and modern portfolio built with Astro.",
       isComingSoon: false,
     },
+    {
+      title: "Simple Key Value Store",
+      techs: ["Go"],
+      githubLink: "https://github.com/coker-felix/simple-key-value-store",
+      description: "A simple key value store built with Go.",
+      isComingSoon: false,
+    },
+    {
+      title: "A Mini Relational Database",
+      techs: ["Go"],
+      githubLink: "#",
+      description: "A mini relational database built with Go.",
+      isComingSoon: true,
+    },
   ],
   gigs: [
-    // {
-    //   title: "E-commerce Platform",
-    //   techs: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    //   websiteLink: "https://example-ecommerce.com",
-    //   description: "Built a full-stack e-commerce platform with payment processing and inventory management.",
-    //   client: "Retail Client",
-    // },
+    {
+      title: "An Event Management and Ticketing System",
+      techs: ["Node.js", "React", "Zod", "Tailwind CSS", "TypeScript", "PostgreSQL", "Prisma","Paystack"],
+      websiteLink: "https://jambotickets.com",
+      description: "Built a full-stack event management and ticketing system with payment processing and inventory management.",
+      client: "A Tech Startup",
+    },
   ],
 };
 
