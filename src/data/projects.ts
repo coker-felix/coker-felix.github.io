@@ -38,6 +38,13 @@ const projects: Projects = {
       isComingSoon: false,
     },
     {
+      title: "A Simple Web Server From Scratch",
+      techs: ["Node.js"],
+      githubLink: "#",
+      description: "A simple web server built with Node.js. Network protocol HTTP in detail Concurrency WebSocket",
+      isComingSoon: true,
+    },
+    {
       title: "A Mini Relational Database",
       techs: ["Go"],
       githubLink: "#",

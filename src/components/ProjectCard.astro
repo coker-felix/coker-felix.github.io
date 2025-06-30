@@ -24,7 +24,7 @@ const gig = project as Gig;
         <div class="flex flex-col gap-3">
           <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
             <h4 class="text-lg font-medium text-neutral-100">{title}</h4>
-            <span class="w-fit rounded-full bg-emerald-900/50 text-emerald-300 px-3 py-1 text-sm font-medium">Coming Soon</span>
+            <span class="w-fit rounded-full bg-emerald-900/50 text-emerald-300 px-3 py-1 text-xs font-medium">Coming Soon</span>
           </div>
           {description && <p class="text-neutral-400 text-sm leading-relaxed">{description}</p>}
           <p class="text-neutral-500 text-sm">{formatTechs(techs)}</p>
@@ -53,7 +53,7 @@ const gig = project as Gig;
               </a>
             )}
             {!isPersonalProject && gig.client && (
-              <span class="text-sm text-neutral-500 bg-neutral-800/50 px-3 py-1 rounded-full">
+              <span class="text-xs text-emerald-300 bg-neutral-800/50 px-3 py-1 rounded-full">
                 {gig.client}
               </span>
             )}
